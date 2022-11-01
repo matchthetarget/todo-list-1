@@ -10,4 +10,14 @@
 #  user_id    :integer
 #
 class Todo < ApplicationRecord
+  belongs_to(:user, { :required => true, :class_name => "User", :foreign_key => "user_id" })
+
+  validates(:content, { :presence => true })
+
+  validates(:status, {
+    :presence => true,
+    :inclusion => { 
+      in: ["next_up", "in_progress", "done"]
+    }
+  })
 end
