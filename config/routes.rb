@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  root "todos#index"
 
   # Routes for the Todo resource:
 

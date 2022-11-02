@@ -19,9 +19,9 @@ class TodosController < ApplicationController
 
   def create
     the_todo = Todo.new
-    the_todo.user_id = params.fetch("query_user_id")
+    the_todo.user_id = @current_user.id
     the_todo.content = params.fetch("query_content")
-    the_todo.status = params.fetch("query_status")
+    the_todo.status = "next_up"
 
     if the_todo.valid?
       the_todo.save
