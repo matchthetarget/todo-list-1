@@ -16,6 +16,20 @@ Behaviors to note:
 - For todos in the "In Progress" section, there is a button that, when clicked, moves the todo to the "Done" section.
 - For all todos, there is a link to delete the todo.
 
+More specifics to notice about the target:
+
+- As usual, pay attention to the copy in buttons, links, labels, headings, etc — spelling, capitalization, punction.
+- The sign in page is located at `/user_sign_in`.
+- The sign up page is located at `/user_sign_up`.
+- The "Next Up" section should be contained within a `<div>` that has the class `"next_up"`.
+    - The `color` of the text within the "Next Up" section should be `darkorange`.
+- The "In Progress" section should be contained within a `<div>` that has the class `"in_progress"`.
+    - The `color` of the text within the "In Progess" section should be `darkgreen`.
+- The "Done" section should be contained within a `<div>` that has the class `"done"`.
+    - The `color` of the text within the "Done" section should be `grey`.
+
+# WIP notes below
+
 ## Tasks
 
 ### Add your resources
@@ -38,14 +52,9 @@ The data model for this application is as follows:
 ```
 
 
-Some implementation details:
+Some implementation requirements:
 
-- The "Next Up" section should be contained within a `<div>` that has the class `"next_up"`.
-    - The `color` of the text within the "Next Up" section should be `darkorange`.
-- The "In Progress" section should be contained within a `<div>` that has the class `"in_progress"`.
-    - The `color` of the text within the "In Progess" section should be `darkgreen`.
-- The "Done" section should be contained within a `<div>` that has the class `"done"`.
-    - The `color` of the text within the "Done" section should be `grey`.
+
 
 
 
