@@ -49,7 +49,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'rspec-html-matchers'
   gem 'rspec-rails'
-  gem 'selenium-webdriver', '4.1'
+  gem 'selenium-webdriver', "3.142.7"
   gem 'webmock'
 end
 
