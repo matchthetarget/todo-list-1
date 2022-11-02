@@ -21,6 +21,9 @@ More specifics to notice about the target:
 - As usual, pay attention to the copy in buttons, links, labels, headings, etc — spelling, capitalization, punction.
 - The sign in page is located at `/user_sign_in`.
 - The sign up page is located at `/user_sign_up`.
+
+Implementation details that you must stick to:
+
 - The "Next Up" section should be contained within a `<div>` that has the class `"next_up"`.
     - The `color` of the text within the "Next Up" section should be `darkorange`.
 - The "In Progress" section should be contained within a `<div>` that has the class `"in_progress"`.
@@ -28,13 +31,20 @@ More specifics to notice about the target:
 - The "Done" section should be contained within a `<div>` that has the class `"done"`.
     - The `color` of the text within the "Done" section should be `grey`.
 
-# WIP notes below
+All other implementation details are up to you.
 
-## Tasks
+## Hints
 
-### Add your resources
+You should try to build the app with the above information, the target, and the automated tests as a guide.
 
-The data model for this application is as follows:
+But, if you are well and truly stuck, you can see some hints. (Note that you won't have these hints on the exam.)
+
+<details>
+<summary>Click here for hints</summary>
+
+## Data model
+
+One possible data model for this application is as follows:
 
 ```
                                           ┌───────────────────────┐
@@ -50,24 +60,4 @@ The data model for this application is as follows:
 │                          │              │                       │
 └──────────────────────────┘              └───────────────────────┘
 ```
-
-
-Some implementation requirements:
-
-
-
-
-
-- Each row in the users table is an account
-
-
-- Generate resources with following commands
-- sample data
-- add new todo — defaults to "in_progress"
-- hide user_id
-- homepage should show only signed in user's todos
-- should have div.next_up, div.next_up, div.done
-- div.next_up should contain h2 with "Next Up", etc
-- colors: darkorange, darkgreen, grey respectively
-- https://www.rubydoc.info/github/jnicklas/capybara/Capybara%2FNode%2FMatchers:assert_matches_style
-- 
+</details>
