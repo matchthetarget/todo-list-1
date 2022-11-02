@@ -1,15 +1,5 @@
 <div>
   <div>
-    <h1>
-      List of all todos
-    </h1>
-  </div>
-</div>
-
-<hr>
-
-<div>
-  <div>
     <h2>
       Add a new todo
     </h2>
@@ -30,73 +20,38 @@
   </div>
 </div>
 
-<hr>
-<div>
-  <div>
-    <table border="1">
-      <tr>
-        <th>
-          ID
-        </th>
+<h2>Next up</h2>
 
-        <th>
-          User
-        </th>
+<ul>
+  <% @next_up_todos.each do |todo| %>
+    <li>
+      <%= todo.content %>
 
-        <th>
-          Content
-        </th>
+      Created <%= time_ago_in_words(todo.created_at) %> ago
+    </li>
+  <% end %>
+</ul>
 
-        <th>
-          Status
-        </th>
+<h2>In progress</h2>
 
-        <th>
-          Created at
-        </th>
+<ul>
+  <% @in_progress_todos.each do |todo| %>
+    <li>
+      <%= todo.content %>
 
-        <th>
-          Updated at
-        </th>
+      Updated <%= time_ago_in_words(todo.updated_at) %> ago
+    </li>
+  <% end %>
+</ul>
 
-        <th>
-        </th>
-      </tr>
+<h2>Done</h2>
 
-      <% @list_of_todos.each do |a_todo| %>
-      <tr>
-        <td>
-          <%= a_todo.id %>
-        </td>
+<ul>
+  <% @done_todos.each do |todo| %>
+    <li>
+      <%= todo.content %>
 
-        <td>
-          <%= a_todo.user_id %>
-        </td>
-
-        <td>
-          <%= a_todo.content %>
-        </td>
-
-        <td>
-          <%= a_todo.status %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_todo.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_todo.updated_at) %> ago
-        </td>
-
-        <td>
-          <a href="/todos/<%= a_todo.id %>">
-            Show details
-          </a>
-        </td>
-      </tr>
-      <% end %>
-    </table>
-  </div>
-</div>
-
-<hr>
+      Updated <%= time_ago_in_words(todo.updated_at) %> ago
+    </li>
+  <% end %>
+</ul>

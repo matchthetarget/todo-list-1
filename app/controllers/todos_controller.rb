@@ -1,8 +1,10 @@
 class TodosController < ApplicationController
   def index
-    matching_todos = Todo.all
-
-    @list_of_todos = matching_todos.order({ :created_at => :desc })
+    @next_up_todos = @current_user.todos.where({ :status => "next_up" }).order({ :created_at => :desc })
+    
+    @in_progress_todos = @current_user.todos.where({ :status => "in_progress" }).order({ :updated_at => :desc })
+    
+    @done_todos = @current_user.todos.where({ :status => "done" }).order({ :updated_at => :desc })
 
     render({ :template => "todos/index.html.erb" })
   end
