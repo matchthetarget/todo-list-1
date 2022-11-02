@@ -27,9 +27,9 @@ class TodosController < ApplicationController
 
     if the_todo.valid?
       the_todo.save
-      redirect_to("/todos", { :notice => "Todo created successfully." })
+      redirect_to("/", { :notice => "Todo created successfully." })
     else
-      redirect_to("/todos", { :alert => the_todo.errors.full_messages.to_sentence })
+      redirect_to("/", { :alert => the_todo.errors.full_messages.to_sentence })
     end
   end
 
@@ -37,15 +37,13 @@ class TodosController < ApplicationController
     the_id = params.fetch("path_id")
     the_todo = Todo.where({ :id => the_id }).at(0)
 
-    the_todo.user_id = params.fetch("query_user_id")
-    the_todo.content = params.fetch("query_content")
     the_todo.status = params.fetch("query_status")
 
     if the_todo.valid?
       the_todo.save
-      redirect_to("/todos/#{the_todo.id}", { :notice => "Todo updated successfully."} )
+      redirect_to("/", { :notice => "Todo updated successfully."} )
     else
-      redirect_to("/todos/#{the_todo.id}", { :alert => the_todo.errors.full_messages.to_sentence })
+      redirect_to("/", { :alert => the_todo.errors.full_messages.to_sentence })
     end
   end
 
@@ -55,6 +53,6 @@ class TodosController < ApplicationController
 
     the_todo.destroy
 
-    redirect_to("/todos", { :notice => "Todo deleted successfully."} )
+    redirect_to("/", { :notice => "Todo deleted successfully."} )
   end
 end

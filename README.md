@@ -12,4 +12,8 @@
 - add new todo — defaults to "in_progress"
 - hide user_id
 - homepage should show only signed in user's todos
-
+- should have div.next_up, div.next_up, div.done
+- div.next_up should contain h2 with "Next Up", etc
+- colors: darkorange, darkgreen, grey respectively
+- https://www.rubydoc.info/github/jnicklas/capybara/Capybara%2FNode%2FMatchers:assert_matches_style
+- 
