@@ -82,7 +82,7 @@
         <div><%= todo.content %></div>
 
         <small>
-          Completed at <%= todo.updated_at.strftime("%l:%M %p %Z on %A, %d %b %Y") %>
+          Completed at <%= todo.updated_at.strftime("%l:%M%P on %d-%b-%Y") %>
 
           <a href="/delete_todo/<%= todo.id %>">Delete</a>
         </small>        
