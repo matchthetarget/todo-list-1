@@ -67,55 +67,52 @@ One possible data model for this application is as follows:
 <details>
   <summary>Click here to see names of each test</summary>
 
-<li>The home page has an h1 element with the text "Your todo list"
+<li>The home page has an h1 element with the text "Your todo list"</li>
 
-<li>The home page has an h2 element with the text "Add a new todo"
+<li>The home page has an h2 element with the text "Add a new todo"</li>
 
-<li>The home page has an h2 element with the text "Next Up"
+<li>The home page has an h2 element with the text "Next Up"</li>
 
-<li>The home page has an h2 element with the text "In Progress"
+<li>The home page has an h2 element with the text "In Progress"</li>
 
-<li>The home page has an h2 element with the text "Done"
+<li>The home page has an h2 element with the text "Done"</li>
 
-<li>The home page has a form that adds a new item to the todo list
+<li>The home page has a button that adds a new item to the todo list</li>
 
-<li>The home page has a form that creates a todo item, and moves it to the "Next Up" section
+<li>The home page has a button that creates a todo item, and moves it to the "Next Up" section</li>
 
-<li>The Next Up section has a div element with the class "next_up"
+<li>The Next Up section has a div element with the class "next_up"</li>
 
-<li>The Next Up section has the color of all text styled as darkorange
+<li>The Next Up section has the color of all text styled as darkorange</li>
 
-<li>The Next Up section has a form that updates a todo item, and moves it to the "In Progress" section
+<li>The Next Up section has a button that updates a todo item, and moves it to the "In Progress" section</li>
 
-<li>The Next Up section displays todo items in a <li> element
+<li>The Next Up section displays todo items in a `<li>` element</li>
 
-<li>The Next Up section displays the created at time for each todo items
+<li>The Next Up section displays the created at time for each todo items</li>
 
-<li>The Next Up section has a link to delete a todo item with the text 'Delete'
+<li>The Next Up section has a link to delete a todo item with the text 'Delete'</li>
 
-<li>The In Progress section has a div element with the class "in_progress"
+<li>The In Progress section has a div element with the class "in_progress"</li>
 
-<li>The In Progress section has the color of all text styled as darkgreen
+<li>The In Progress section has the color of all text styled as darkgreen</li>
 
-<li>The In Progress section has a form that updates a todo item, and moves it to the "Done" section
+<li>The In Progress section has a button that updates a todo item, and moves it to the "Done" section</li>
 
-<li>The In Progress section displays todo items in a <li> element
+<li>The In Progress section displays todo items in a `<li>` element</li>
 
-<li>The In Progress section displays the updated at time for each todo items
+<li>The In Progress section displays the updated at time for each todo items</li>
 
-<li>The In Progress section has a link to delete a todo item with the text 'Delete'
+<li>The In Progress section has a link to delete a todo item with the text 'Delete'</li>
 
-<li>The Done section has a div element with the class "done"
+<li>The Done section has a div element with the class "done"</li>
 
-<li>The Done section has the color of all text styled as grey
+<li>The Done section has the color of all text styled as grey</li>
 
-<li>The Done section displays todo items in a <li> element
+<li>The Done section displays todo items in a `<li>` element</li>
 
-<li>The Done section displays the formatted updated at time for each todo items
+<li>The Done section displays the formatted updated at time for each todo items</li>
 
-<li>The Done section has a link to delete a todo item with the text 'Delete'
-
-<li>Finished in 4.24 seconds (files took 0.83411 seconds to load)
-<li>24 examples, 0 failures
+<li>The Done section has a link to delete a todo item with the text 'Delete'</li>
 
 </details>
