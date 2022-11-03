@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "The Done section" do
-  it "displays todo items in a <li> element", points: 1 do
+  it "displays todo items in a `<li>` element", points: 1 do
     visit("/user_sign_in")
     user_jacob = User.new
     user_jacob.email = "jacob_#{rand(100)}@example.com"
