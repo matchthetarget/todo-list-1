@@ -64,7 +64,7 @@ describe "The In Progress section" do
 
     updated_at = nil
     travel_to 1.day.ago do
-      updated_at = Time.now
+      updated_at = Time.current
       within(:css, "div.next_up") do
         within(:css, "form") do
           find("button", :text => /Move to In Progress/i ).click
@@ -72,10 +72,12 @@ describe "The In Progress section" do
       end
     end
 
+    visit("/")
+
     formatted_updated_at_time = time_ago_in_words(updated_at)
     expect(page).to have_tag("div.in_progress") do     
       with_tag("ul") do
-        with_tag("li", text: /#{formatted_updated_at_time} ago/i)
+        with_tag("li", text: /Started #{formatted_updated_at_time} ago/i)
       end
     end
   end
