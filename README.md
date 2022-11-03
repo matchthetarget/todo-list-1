@@ -22,7 +22,7 @@ More specifics to notice about the target:
 - The sign in page is located at `/user_sign_in`.
 - The sign up page is located at `/user_sign_up`.
 
-Implementation details that you must stick to:
+## Implementation details that you must stick to:
 
 - The "Next Up" section should be contained within a `<div>` that has the class `"next_up"`.
     - The `color` of the text within the "Next Up" section should be `darkorange`.
@@ -60,4 +60,59 @@ One possible data model for this application is as follows:
 │                          │              │                       │
 └──────────────────────────┘              └───────────────────────┘
 ```
+</details>
+
+
+## Specs
+<details>
+  <summary>Click here to see names of each test</summary>
+
+<li>The home page has an h1 element with the text "Your todo list"</li>
+
+<li>The home page has an h2 element with the text "Add a new todo"</li>
+
+<li>The home page has an h2 element with the text "Next Up"</li>
+
+<li>The home page has an h2 element with the text "In Progress"</li>
+
+<li>The home page has an h2 element with the text "Done"</li>
+
+<li>The home page has a button that adds a new item to the todo list</li>
+
+<li>The home page has a button that creates a todo item, and moves it to the "Next Up" section</li>
+
+<li>The Next Up section has a div element with the class "next_up"</li>
+
+<li>The Next Up section has the color of all text styled as darkorange</li>
+
+<li>The Next Up section has a button that updates a todo item, and moves it to the "In Progress" section</li>
+
+<li>The Next Up section displays todo items in a `<li>` element</li>
+
+<li>The Next Up section displays the created at time for each todo items</li>
+
+<li>The Next Up section has a link to delete a todo item with the text 'Delete'</li>
+
+<li>The In Progress section has a div element with the class "in_progress"</li>
+
+<li>The In Progress section has the color of all text styled as darkgreen</li>
+
+<li>The In Progress section has a button that updates a todo item, and moves it to the "Done" section</li>
+
+<li>The In Progress section displays todo items in a `<li>` element</li>
+
+<li>The In Progress section displays the updated at time for each todo items</li>
+
+<li>The In Progress section has a link to delete a todo item with the text 'Delete'</li>
+
+<li>The Done section has a div element with the class "done"</li>
+
+<li>The Done section has the color of all text styled as grey</li>
+
+<li>The Done section displays todo items in a `<li>` element</li>
+
+<li>The Done section displays the formatted updated at time for each todo items</li>
+
+<li>The Done section has a link to delete a todo item with the text 'Delete'</li>
+
 </details>
