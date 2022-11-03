@@ -44,7 +44,7 @@ describe "The home page" do
   end
 end
 
-describe "The Next Up section" do
+describe "The home page" do
   it "has a div element with the class \"next_up\"", points: 1 do
     visit("/user_sign_in")
     user_jacob = User.new
@@ -114,7 +114,7 @@ describe "The text within the div of class \"next_up\"" do
   end
 end
 
-describe "The In Progress section" do
+describe "The home page" do
   it "has a div element with the class \"in_progress\"", points: 1 do
     visit("/user_sign_in")
     user_jacob = User.new
@@ -182,7 +182,7 @@ describe "The text within the div of class \"in_progress\"" do
   end
 end
 
-describe "The Done section" do
+describe "The home page" do
   it "has a div element with the class \"done\"", points: 1 do
     visit("/user_sign_in")
     user_jacob = User.new
